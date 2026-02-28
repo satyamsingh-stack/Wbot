@@ -50,6 +50,30 @@ client.on('message', async message => {
             "You're welcome! 😊\nIs there anything else I can help you with?"
         );
     }
+    // Nice / That's nice
+    else if(text.includes('nice') || text.includes('thats nice') || text.includes('cool') || text.includes('awesome') || text.includes('amazing') || text.includes('great') || text.includes('wonderful') || text.includes('fantastic')) {
+        await message.reply(
+            "Thank you! 😊 I'm glad you think so.\nIs there anything else I can help you with?"
+        );
+    }
+    // Quick response / Fast response
+    else if(text.includes('quick') || text.includes('fast') || text.includes('rapid') || text.includes('speed') || text.includes('you are fast') || text.includes('you are quick')) {
+        await message.reply(
+            "Thank you! 😊 We aim to respond as quickly as possible.\nIs there anything else I can assist you with?"
+        );
+    }
+    // Good job / Well done
+    else if(text.includes('good job') || text.includes('well done') || text.includes('good work') || text.includes('nice work') || text.includes('brilliant')) {
+        await message.reply(
+            "Thank you so much! 🙏\nWe always strive to do our best.\nIs there anything else I can help you with?"
+        );
+    }
+    // Appreciate / I appreciate
+    else if(text.includes('appreciate') || text.includes('kudos') || text.includes('respect') || text.includes('impressive')) {
+        await message.reply(
+            "I really appreciate your kind words! 😊\nIt's our pleasure to help.\nIs there anything else I can assist you with?"
+        );
+    }
     // Services inquiry
     else if(text.includes('service') || text.includes('what do you do') || text.includes('help me')) {
         await message.reply(
@@ -82,8 +106,7 @@ client.on('message', async message => {
             "Our working hours are:\n\n" +
             "Monday - Friday: 8:00 AM - 10:00 PM\n" +
             "Saturday: 10:00 AM - 2:00 PM\n" +
-            "Sunday: Closed\n\n" +
-            "Note: Our bot is available 8 AM to 10 PM"
+            "Sunday: Closed\n\n"
         );
     }
     // Goodbye
